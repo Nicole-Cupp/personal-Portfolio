@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  	    <meta charset="utf-8">
+  	    <meta name="description" content="Your description goes here">
+  	    <meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,400;0,8..144,700;1,8..144,400&display=swap" rel="stylesheet"> 
+        <script src="https://kit.fontawesome.com/aa7c5fb62b.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="./assets/css/main.css">
+
+		<title>Portfolio - Nicole Cupp</title>
+
+	</head>
+
+	<body class="aboutPage">
+        <header>
+            <nav class="navbar">
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+
+                <div class="navMenu">
+                    <ul>
+                        <li class="navBar navItem"><a id="tabHome" class="inactive navLink" href="index.html">{ NC }</a></li><!--
+                        --><li class="navBar navItem"><a id="tabPortfolio" class="inactive navLink" href="portfolio.html">Portfolio</a></li><!--
+                        --><li class="navBar navItem"><a id="tabAbout" class="active navLink" href="about.html">About</a></li>
+                    </ul>
+                    <p class="navSocialMediaHeader navItem">Get in touch</p>
+                    <ul>
+                        <li class="navSocial navItem"><a class="navLink" href="https://twitter.com/ncupp13" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li class="navSocial navItem"><a class="navLink" href="https://github.com/Nicole-Cupp" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                        <li class="navSocial navItem"><a class="navLink" href="https://www.linkedin.com/in/ncupp13/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main class="aboutMe">
+            <img class="profilePicture" src="./assets/images/profile1.jpg" alt="Photo of me with my cat, Gray.">
+            
+            <h1 class="bold">About Me</h1>
+
+            <p class="textAlignLeft">Hi, I'm Nicole Cupp. I'm a front-end web developer living in Lakeland, Florida. I have a passion for paying attention to detail and finding simple but effective solutions. Self-expression, art, and immersion have a lot of meaning for me, and coding helps me tap into all three areas at once.</p>
+
+            <p class="textAlignLeft">Outside of coding, I love spending time with my husband and two cats. I also enjoy eating and cooking food found in different parts of the world, watching anything animated, and video gaming.</p>
+
+            <p class="textAlignLeft">I also enjoy networking and meeting other individuals in the industry, so please feel free to reach out if you would like to connect or have a coffee chat!</p>
+            
+            <section>
+                <a name="contact"></a>
+                <h2>Let's Connect!</h2>
+                <form action="#">
+                    <legend class="bold">Name:</legend>
+                    <label for="firstName">First Name:</label>
+                    <input required placeholder="First Name" type="text">
+                    <label for="lastName">Last Name:</label>
+                    <input required placeholder="Last Name" type="text">
+
+                    <legend class="bold">Contact Info:</legend>
+                    <label for="email">Email:</label>
+                    <input required placeholder="email@address.com" type="email">
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input placeholder="999-999-9999" type="tel">
+
+                    <label for="message">Message:</label>
+                    <textarea placeholder="Please leave a message." name="message" id="message" cols="30" rows="10"></textarea>
+                    <button class="bigBtn button">Submit</button>
+                </form>
+            </section>
+        </main>
+        <footer>Designed + Coded with <i class="fa-regular fa-heart"></i> by Nicole Cupp</footer>
+
+        <script src="./assets/javascript/main.js"></script>
+    </body>

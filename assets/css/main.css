@@ -1,0 +1,602 @@
+/*============================
+    CSS RESET - meyerweb.com
+==============================*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*===========================================
+    UNIVERSAL BASE/FORMAT
+===========================================*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+}
+:root {
+    --white: rgb(255, 255, 255);
+    --black: rgb(0, 0, 0);
+    --light-gray: rgb(194, 194, 194); /*#c2c2c2*/
+    --gold: rgb(187, 158, 125); /*#bb9e7d*/
+}
+/*===========================================
+    BASE STYLES/FORMAT
+===========================================*/
+/*COLORS, FONT-FAMILY, & FONT-SIZES*/
+footer {
+    font-size: clamp(1.6rem, 10vw, 1.8rem);
+}
+h1, h2, h3,
+p,
+ul {
+    font-family: 'Roboto Serif', serif;
+}
+h1 {
+    font-size: clamp(3.2rem, 10vw, 4.8rem);
+}
+h2, h3 {
+    font-size: clamp(2.4rem, 5vw, 3.6rem);
+}
+h4,
+legend,
+p {
+    font-size: clamp(1.8rem, 5vw, 2.8rem);
+}
+h5,
+input,
+label,
+textarea,
+.project p {
+    font-size: clamp(1.8rem, 5vw, 2.2rem);
+}
+i {
+    vertical-align: middle;
+ }
+li,
+.navSocialMediaHeader {
+    font-size: clamp(2rem, 10vw, 2.4rem);
+}
+.navSocial i {
+    font-size: clamp(2rem, 10vw, 3.2rem);
+}
+.bigBtn,
+.smallBtn {
+    font-size: clamp(2rem, 5vw, 3.4rem)
+}
+header,
+main {
+    background: var(--white);
+}
+.navMenu {
+    background: rgba(194, 194, 194, 0.4);
+}
+/*ADD ON STYLES*/
+.bold {
+    font-weight: 700;
+}
+.button {
+    background: var(--white);
+    border: 0.1rem solid var(--black);
+    margin: 0 auto;
+}
+.subHeading {
+    font-size: clamp(2.4rem, 5vw, 2.8rem);
+}
+.textAlignLeft {
+    text-align: left;
+}
+/*INTERACTIVE STYLES*/
+.button:hover {
+    background: var(--gold);
+    border-color: var(--gold);
+    color: var(--white);
+    transition: 0.3s ease-in-out;
+}
+.navSocial:hover {
+    color: var(--gold);
+}
+/*===========================================
+    LAYOUT
+===========================================*/
+/*BY TYPE*/
+footer {
+    border-top: 0.1rem solid var(--black);
+    padding: 2rem 0;
+    text-align: center;
+}
+main {
+    padding: 10% 0;
+    text-align: center;
+}
+a,
+li {
+    display: inline-block;
+    background: none;
+    color: inherit;
+}
+a {
+    text-decoration: none;
+}
+button,
+label {
+    display: block;
+}
+h1 {
+    padding-top: 4rem;
+}
+h2 {
+    padding: 1.5rem 0 3rem 0;
+}
+h4 {
+    padding: 3rem 10% 3rem 10%;
+}
+h5 {
+    padding-top: 2%;
+}
+p {
+    line-height: 1.3;
+}
+/*========================
+    LAYOUT - MAIN PAGE
+========================*/
+.hamburger,
+.navSocialMediaHeader {
+    display: none;
+}
+.introduction p {
+    padding-bottom: 0.5rem;
+}
+.introduction p:first-of-type {
+    padding-top: 5%;
+}
+.bigBtn {
+    margin: 3% 0 5% 0;
+    padding: 1.5rem 3rem;
+}
+.navBar {
+    text-align: center;
+    width: 25%;
+}
+.navMenu ul{
+    display: inline-block;
+}
+.navItem,
+.navLink {
+    transition: 0.3s ease;
+}
+.navMenu a {
+    padding: 10% 0;
+    width: 100%;
+}
+.navMenu ul:first-of-type {
+    width: 60%;
+}
+.navMenu ul:last-of-type {
+    padding-right: 3rem;
+    text-align: right;
+    width: 39%;
+}
+.navSocial {
+    padding: 0 1.5rem;
+}
+.services {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.services div {
+    padding: 2% 3rem;
+    width: 60%;
+}
+.services h3 {
+    border-bottom: 0.1rem solid var(--black);
+    padding: 2% 0 1% 0;
+}
+.services img {
+    margin: auto 0;
+    padding-right: 3rem;
+}
+.services p {
+    padding-top: 1rem;
+}
+.servicesSubHeading {
+    padding: 0 4%;
+}
+.skillsContainer {
+    padding: 10% 2%;
+}
+.skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-around;
+    gap: 5rem;
+    padding: 1rem 1% 0 1%;
+}
+.skills > section {
+    width: 40%;
+}
+.smallBtn {
+    padding: 1rem 3rem;
+}
+/*========================
+    LAYOUT - ABOUT
+========================*/
+form {
+    margin: 0 auto;
+    width: 30%;
+}
+form > * {
+    padding: 1.2rem 0;
+    width: 100%;
+}
+legend {
+    padding-top: 5%;
+}
+.aboutPage h1 {
+    padding-bottom: 2rem;
+}
+.aboutPage h2 {
+    border-bottom: 0.1rem solid var(--black);
+    margin: 0 auto;
+    padding-top: 5%;
+    width: 50%;
+}
+.aboutMe p {
+    margin: 0 auto;
+    padding: 2rem 0;
+    width: 50%;
+}
+.profilePicture {
+    box-shadow: 0 0 3rem 0.1rem var(--gold);
+    border: 0.3rem solid var(--gold);
+    border-radius: 50%;
+}
+/*========================
+    LAYOUT - PORTFOLIO
+========================*/
+.portfolioPage {
+    padding: 5% 0;
+}
+.portfolioHeader {
+    padding-bottom: 3%;
+}
+.myProjects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project {
+    padding: 2% 0;
+}
+.project > * {
+    max-width: 60rem;
+}
+.project a:hover {
+    transform: scale(1.075);
+    transition: transform 0.2s ease;
+}
+.project a.button {
+    margin-top: 3rem;
+}
+.project p {
+    padding: 1rem 0;
+}
+.project:nth-child(even) {
+    padding-left: 5%;
+}
+.project:nth-child(odd) {
+    border-right: 0.1rem solid rgb(194, 194, 194, 0.6);
+    padding-right: 5%;
+}
+/* ===========================================
+    MEDIA QUERIES
+===========================================*/
+/*MOBILE RESPONSIVE*/
+@media (max-width: 1049px) {
+	/*LAYOUT CHANGES*/
+    body {
+        padding: 5%;
+    }
+    header,
+    .introduction {
+        background: var(--white);
+    }
+    main {
+        padding: 0;
+    }
+    form {
+        width: 100%;
+    }
+    h4 {
+        padding: 1rem 10% 3rem 10%;
+    }
+    .aboutMe {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .aboutPage h2 {
+        width: 100%;
+    }
+    .aboutMe p {
+        width: 100%;
+    }
+    .devFocus {
+        max-width: 50rem;
+        width: 100%;
+    }
+    .introduction {
+        padding: 10% 0;
+    }
+    .profilePicture {
+        margin-top: 3rem;
+        max-width: 40.6rem;
+        width: 100%;
+    }
+    .services,
+    .skills {
+        flex-direction: column;
+        align-items: center;
+    }
+    .services div,
+    .skills > section {
+        text-align: center;
+        width: 100%;
+    }
+    .services div {
+        padding-top: 2rem;
+    }
+    .services p {
+        padding-bottom: 2rem;
+    }
+    /*HAMBURGER MENU*/
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        padding: 2rem;
+        width: 10%;
+    }
+    .bar {
+        display: block;
+        background: var(--black);
+        height: 0.3rem;
+        margin: 0.5rem auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        width: 2.5rem;
+    }
+    .hamburger.active {
+        position: relative;
+        left: 72%;
+        transition: 0.3s ease;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(0.8rem) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-0.8rem) rotate(-45deg);
+    }
+    .navMenu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        position: fixed;
+        left: -100%;
+        top: 0;
+        background: var(--white);
+        box-shadow: 1rem 0 0.5rem -0.2rem var(--light-gray);
+        height: 100vh;
+        transition: 0.3s;
+        width: 70%;
+    }
+    .navMenu.active {
+        left: 0;
+    }
+    .navMenu ul:last-of-type {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-right: 0;
+        width: 50%;
+    }
+    .navBar {
+        padding: 2rem 0;
+        width: 100%;
+    }
+    .navLink:hover {
+        color: var(--gold);
+    }
+    .navMenu .navBar:first-of-type,
+    .navSocialMediaHeader {
+        margin-top: 5rem;
+    }
+    .navSocialMediaHeader {
+        display: block;
+        border-bottom: 0.2rem solid var(--black);
+        padding-top: 2rem;
+        width: fit-content;
+    }
+    .navSocial {
+        padding-top: 3rem;
+    }
+    /*LAYOUT - PORTFOLIO*/
+    .myProjects {
+        flex-direction: column;
+    }
+    .myProjects img {
+        width: 100%;
+    }
+    .project a.button {
+        margin-bottom: 5rem;
+    }
+    .project a:hover {
+        transform: scale(1.05);
+    }
+    .project p {
+        text-align: center;
+    }
+    .project:nth-child(even) {
+        padding-left: 0;
+    }
+    .project:nth-child(odd) {
+        border-right: none;
+        padding-right: 0;
+    }
+} 
+/*FIXING LAYOUT/FORMATTING ISSUES*/
+@media (min-width: 1050px) and (max-width: 1499px) {
+    form {
+        width: 50%;
+    }
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+    .services div {
+        padding: 2% 3rem;
+    }
+    .services div,
+    .skills > section {
+        text-align: center;
+        width: 100%;
+    }
+    .services img {
+        margin: auto 0;
+        padding-right: 3rem;
+    }
+    .services p {
+        padding-top: 1rem;
+    }
+    .skillsContainer {
+        padding: 10% 0;
+    }
+    .skills {
+        flex-wrap: wrap;
+    }
+    .skills > section {
+        width: 40%;
+    }
+    /*LAYOUT - ABOUT*/
+    .aboutMe p {
+        width: 70%;
+    }
+    .submit {
+        margin: 0 auto;
+    }
+    /*NAVIGATION MENU*/
+    .active {
+        background: var(--white);
+    }
+    .active:hover {
+        color: var(--gold);
+    }
+    .inactive:hover {
+        background: rgba(187, 158, 125, 0.8);
+        color: var(--white);
+    }
+    .navSocial {
+        margin-right: 0;
+        margin-left: auto;
+    }
+    /*BY CLASS*/
+    .introduction {
+        border: 0.3rem solid var(--gold);
+        border-radius: 3rem;
+        box-shadow: 0 0 5rem 0.1rem var(--gold);
+        margin: 0 auto;
+        width: 60%;
+    }
+    /*LAYOUT - PORTFOLIO*/
+    .myProjects img {
+        width: 100%;
+    }
+    .project {
+        padding: 2% 3%;
+        width: 50%;
+    }
+    .project a.button {
+        margin-bottom: 5rem;
+    }
+    .project p {
+        text-align: center;
+    }
+}
+/*LAPTOP/DESKTOP RESPONSIVE*/
+@media (min-width:1500px) {
+	/*LAYOUT CHANGES*/
+    /*NAVIGATION MENU*/
+    .active {
+        background: var(--white);
+    }
+    .active:hover {
+        color: var(--gold);
+    }
+    .inactive:hover {
+        background: rgba(187, 158, 125, 0.8);
+        color: var(--white);
+    }
+    .navSocial {
+        margin-right: 0;
+        margin-left: auto;
+    }
+    /*BY CLASS*/
+    .introduction {
+        border: 0.3rem solid var(--gold);
+        border-radius: 3rem;
+        box-shadow: 0 0 5rem 0.1rem var(--gold);
+        margin: 0 auto;
+        width: 60%;
+    }
+}
