@@ -12,3 +12,4 @@ COLOR SCHEME:
 I decided to stick with black, white, grays, and a gold accent for my color palette.
 
 05/11/2022 - First version of portfolio completed.
+            10:04 PM - Ran into issue uploading files to Git/Github. Testing now to see if I can push code to GitHub without issue.
